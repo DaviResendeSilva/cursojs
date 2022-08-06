@@ -1,0 +1,24 @@
+body{
+background-color: rgb(27, 68, 184);
+font: normal 15pt arial;
+}
+header{
+color: white;
+text-align: center;
+}
+ 
+ section{
+    background-color: aliceblue;
+    border-radius: 10px;/*centralizar*/
+    padding: 15px;/*tamanho da caixa*/
+    width: 500px;
+    margin: auto;
+    color: rgb(248, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.466) 5px 5px 5px;/*sombras da caixa*/
+ }
+ footer{
+
+color: white;
+text-align: center;
+font-style: italic;
+ }

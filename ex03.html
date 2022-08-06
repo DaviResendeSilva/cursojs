@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Origem</title>
+</head>
+<body>
+    <h1>Você é estrangeiro ou mora no país de origem?</h1>
+    Escreva sua origem: <input type="text" name="txtvor" id="txtvor">
+    Escreva seu pais atual: <input type="text" name="txtvor" id="txtvat">
+   <input type="button" value="verificar" onclick= "origem()">
+
+<div id="res">
+
+</div>
+<script>
+
+    function origem(){
+            var txtv = window.document.getElementById('txtvor')
+            var txtatt = window.document.getElementById('txtvat')
+        var res = window.document.getElementById('res')
+        var nome2 = String(txtvat.value)
+        var nome = String(txtv.value)
+res.innerHTML = `<p>Sua origem é ${nome} e seu pais atual é ${nome2}</p>`
+    if (nome2 == nome){
+        res.innerHTML = `<p>Você mora em ${nome2}, seu país de `
+    }
+    else { 
+res.innerHTML = `Você não mora no seu país de origem!`
+    }
+}
+</script>
+</body>
+</html>

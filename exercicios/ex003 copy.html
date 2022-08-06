@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{ 
+            background-color: rgb(0, 0, 0);
+       color: white;
+       font: normal 15pt arial;
+        }
+      h1   { 
+        color: rgb(46, 58, 58);
+        /*comentario em css*/
+    }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1> <!-- comentario para html-->
+    <p>Já me livrei da maldição!</p>
+    <script>// converter sempre antes do window.prompt
+    //se for número com virgula usa-se Number.parseFloat
+    //se quiser q o javascript decida se for inteiro ou flutuante, usa-se apenas Number
+    
+        var n1 = Number(window.prompt ('Digite um número'))//prompt é recebe como string.
+        var n2 = Number(window.prompt ('Digite outro número'))//Number.parseInt transforma o prompt(resultado) em número inteiro.
+        var s = n1 + n2
+         window.alert ('A soma do valor é, '+ String(s) + '!')//se quiser alterar um número para string usa-se String() ou n.toString()
+        // para facilitar o comando usa-se `` no lugar de '' e ${s} por exemplo:
+        //EXEMPLO: \/\/\/\/\/\/\/
+        //window.alert(`A soma do valor é ${s)`
+ //var s:
+// s.length  diz quantos caracteres a string tem 
+// s.toUpperCase() transforma tudo para 'MAIÚSCULAS'
+// s.to LowerCase transforma tudo para 'minúsculas'
+         // number + number para adição
+        // string + string para concatenação 
+
+        </script>
+</body>
+</html>

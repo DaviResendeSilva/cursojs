@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passsos com DOM</title>
+</head>
+<style>
+    body {
+        background-color: blueviolet;
+        color: orange;
+        font: normal 18pt Arial;
+    }
+</style>
+<body>
+    <h1> Iniciando estudos com <strong>DOM</strong></h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>Dom</strong></p>
+    <div class="msg">Clique em mim</div>
+    <!--div class então será div. Se fosse div id seria div#-->
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        /*
+        var d = window.document.getElementsByName('msg')[0]
+   d.innerText = 'Davi'
+*/ 
+  var d = window.document.querySelector('div.msg')//div# para id, div. para class
+  d.style.background = 'green'
+    </script>
+</body>
+</html>

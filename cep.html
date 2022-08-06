@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP</title>
+    <style>
+        body{
+            background-color: rgb(219, 219, 121);
+            color: rgb(46, 38, 38);
+            font: normal 12pt arial;
+        }
+ 
+    </style>
+</head>
+<body>
+    
+    <h1> CEP de cidades do sul de Minas.</h1>
+      <strong><p></p>Escreva o nome da cidade em que deseja descobrir o cep:</p></strong></body></strong> <input type="text" name="txtvcp" id="txtvcp">
+    <input type="button" value="Verificar" onclick="cep()">
+    <div id="desc">
+    </div>
+   <script>
+        function cep(){
+        var txtv = window.document.getElementById('txtvcp')
+        var desc = window.document.getElementById('desc')
+        var nome = String(txtv.value)
+
+    desc.innerHTML = `<p>O nome da cidade é <strong>${nome}</strong>`
+        
+    if (nome == 'Candeias' )
+        {
+            desc.innerHTML += `</p> CEP: <strong>37280000</strong>`
+        }
+    else {
+
+        if (nome == 'Campo Belo' )
+        {
+            desc.innerHTML += `</p>Um dos CEPs de Campo belo é: <strong>37270000</strong>`
+        }
+    else {
+
+    }
+    if (nome == 'Formiga' )
+        {
+            desc.innerHTML += `</p>Um dos CEPs de Formiga é: <strong>35570084</strong>`
+        }
+    else {
+
+    }
+    if (nome == 'Camacho' )
+        {
+            desc.innerHTML += `</p>CEP: <strong>35555-000</strong>`
+        }
+    else {
+
+    }
+    if (nome == 'Perdões' )
+        {
+            desc.innerHTML += `</p>CEP: <strong>37260-000</strong>`
+        }
+    else {
+
+    }
+    if (nome == 'Cana Verde' )
+        {
+            desc.innerHTML += `</p>CEP: <strong>37267-000</strong>`
+        }
+    else {
+
+    }
+    if (nome == 'Aguanil' )
+        {
+            desc.innerHTML += `</p>CEP: <strong>37273-000</strong>`
+        }
+    else {
+
+    }
+    if (nome == 'Santana do Jacaré' )
+        {
+            desc.innerHTML += `</p>CEP: <strong>37278-000</strong>`
+        }
+    else {
+
+    }
+    if (nome == 'Lavras' )
+        {
+            desc.innerHTML += `</p>Um dos CEPs de Lavras é:<strong>35700044</strong>`
+        }
+    else {
+
+    }
+
+     if (nome == 'Varginha' )
+        {
+            desc.innerHTML += `</p>Um dos CEPs de Varginha é:<strong>12903834</strong>`
+        }
+    else {
+
+    }
+
+    }
+    if (nome == 'São Thomé das Letras' )
+        {
+            desc.innerHTML += `</p>Um dos CEPs de São Thomé das Letras é <strong>37408000</strong>`
+        }
+    else {
+    }
+    if (nome == 'Pouso Alegre' )
+        {
+            desc.innerHTML += `</p> Um dos CEPs de Pouso Alegre é:<strong>09440-290</strong>`
+        }
+    else {}
+}
+    </script>
+    </body>
+</html>

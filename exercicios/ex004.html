@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <style>
+        body{
+            font: normal 20pt arial;
+        }
+    </style>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>//to.Upercase() e to.LoweCase() sempre tem q ser acompanhado pelos parenteses
+        var nome = window.prompt('Qual é o seu nome?')//<strung> escreve em negrito. </strong termina o negrito>
+        document.write(`Olá senhor <strong>${nome}!</strong>  Seu nome tem ${nome.length} letras!<br/>`)//document.write escreve na tela na linha de baixo
+       document.write(`Seu nome em letras maiúsculas é: ${nome.toUpperCase()}!<br/n>`)//<br/> usa-se para quebrar linha
+       document.write(`Seu nome em letras minúsculas é: ${nome.toLocaleLowerCase()}!<br/n>`)
+
+//Alterar números:
+// var n1= 1545.5 para aumentar as casas decimais usa-se n1.toFixed(2) dentro do parentese a quantidade de casa
+// var n1.toFixed(2) 
+//'1545.50'
+//Para trocar . por , em números usa-se:
+//n1.toFixed(2).replace('.', ',')
+//'1545,50'
+// Formatar número para REAL: n1.toLocaleString('pt-BR', {style: 'currency', currency 'BRL'})
+  // R$1545,50  para mudar o formato de numero para euro ou dólar é somente trocar o BRL para a moeda que quiser.
+  </script>
+</body>
+</html>
